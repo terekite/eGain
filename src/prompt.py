@@ -1,6 +1,6 @@
 from __future__ import annotations
 from constants import QUIT
-from constants.MESSAGES import INVALID_INPUT_DEFAULT
+from constants import MESSAGES
 
 
 class Prompt:
@@ -10,7 +10,7 @@ class Prompt:
             self,
             message: str,
             validation: callable = lambda _: True,
-            invalid_input_message: str = INVALID_INPUT_DEFAULT
+            invalid_input_message: str = MESSAGES.INVALID_INPUT_DEFAULT
     ):
         self._message = message
         self._user_entry = None

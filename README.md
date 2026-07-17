@@ -7,6 +7,7 @@ Package tracking tool
 - Run main.py using python (python main.py or python3 main.py or equivalent).
    
 2. Explanation of approach
+
 My approach for implementing this was in 3 steps. Firstly, create Prompt objects for all of the possible prompts that may
 come up throughout the tool. A Prompt is an object which contains a message and an input validations, displays/prompts
 the user for input, then decides which prompt to go to next. The second step was to wire these prompts together so that
@@ -15,4 +16,5 @@ handle next prompts which rely on user input (such as "Y" for yes or "N" for no)
 to another prompt. The third final step was to start the loop by creating a PromptChain object and calling run() on it,
 providing it with a starting prompt. The PromptChain is essentially the chatbot, which loops until the next prompt is null.
 
-3. Screenshots
+3. Screenshot of tool
+![screenshot of tool.png](screenshot%20of%20tool.png)
