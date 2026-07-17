@@ -18,7 +18,7 @@ class Prompt:
         self._invalid_input_message = invalid_input_message
         self._next = None
 
-    def get_next(self):
+    def get_next(self) -> "Prompt" | callable:
         return self._next
 
     def set_next(self, next_prompt: dict[str, "Prompt"] | "Prompt") -> None:

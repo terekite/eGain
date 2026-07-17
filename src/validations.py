@@ -1,5 +1,6 @@
 from constants import YES, NO, TRACKING_DIGITS, ZIP_DIGITS
 
+
 """
 This file contains some examples of how unexpected user inputs are handled.
 These validation functions are passed to the Prompt constructor and it calls
